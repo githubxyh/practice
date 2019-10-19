@@ -15,7 +15,6 @@ public class PrintDuplicate3 {
         while (end >= start){
             int middle = ((end - start)>>2) + start;
             int count = getCountFromArr(arr,start,middle);
-            System.out.println("count的值:" + count);
 
             if(end == start){
                 /**

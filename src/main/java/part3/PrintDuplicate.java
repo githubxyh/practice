@@ -12,9 +12,7 @@ package part3;
 public class PrintDuplicate {
 
     public static void main(String[] args) {
-
         int[] arr = {2,3,1,0,2,5,3};
-
         HashTable table = new HashTable(arr.length);
 
         for(int i=0; i<arr.length; i++){
@@ -28,5 +26,4 @@ public class PrintDuplicate {
             }
         }
     }
-
 }

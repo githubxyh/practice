@@ -2,6 +2,9 @@ package part3;
 
 public class HashTable {
 
+    /**
+     * hash表的结点
+     */
     class Node{
         int data;
         Node next;
@@ -11,16 +14,21 @@ public class HashTable {
         }
     }
 
+    //hash表
     private Node[] table;
 
+    /**
+     * 构造方法
+     * @param tableLength:hash表的长度
+     */
     public HashTable(int tableLength) {
         table = new Node[tableLength];
     }
 
+    //向hash表中添加元素
     public void add(int data){
         //由于题目的特殊性，数组中值都小于数组长度，所以hash函数如下：
         int position = data;
-
         Node head = table[position];
 
         if(head == null){
@@ -32,9 +40,12 @@ public class HashTable {
             }
             temp.next = new Node(data);
         }
-
     }
 
+    /**
+     * 打印hash表指定位置的链表
+     * @param index
+     */
     public void print(int index){
         Node head = table[index];
         if(head != null){
@@ -47,6 +58,11 @@ public class HashTable {
         }
     }
 
+    /**
+     * 获取hash表中指定位置的链表长度
+     * @param index
+     * @return
+     */
     public int getPositionLength(int index){
         int count = 0;
         Node head = table[index];
@@ -60,5 +76,4 @@ public class HashTable {
         }
         return count;
     }
-
 }

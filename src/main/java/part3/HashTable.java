@@ -38,6 +38,7 @@ public class HashTable {
             while (temp.next != null){
                 temp = temp.next;
             }
+            //***给链表最后一个位置赋值时，一定要给temp.next赋值，不能给temp赋值
             temp.next = new Node(data);
         }
     }

@@ -11,12 +11,15 @@ public class HashTable {
         }
     }
 
-    private int tableLength = 10;
+    private Node[] table;
 
-    private Node[] table = new Node[tableLength];
+    public HashTable(int tableLength) {
+        table = new Node[tableLength];
+    }
 
     public void add(int data){
-        int position = data % tableLength;
+        //由于题目的特殊性，数组中值都小于数组长度，所以hash函数如下：
+        int position = data;
 
         Node head = table[position];
 
@@ -44,8 +47,18 @@ public class HashTable {
         }
     }
 
-    public int getLinkLength(int index){
-        return 0;
+    public int getPositionLength(int index){
+        int count = 0;
+        Node head = table[index];
+        if(head != null){
+            count++;
+            Node temp = head.next;
+            while (temp != null){
+                count++;
+                temp = temp.next;
+            }
+        }
+        return count;
     }
 
 }

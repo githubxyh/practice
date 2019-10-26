@@ -8,7 +8,6 @@ public class BinaryTree {
         public int data;
         public TreeNode left;
         public TreeNode right;
-
         public TreeNode(int data) {
             this.data = data;
         }
@@ -43,7 +42,6 @@ public class BinaryTree {
         }
     }
 
-
     //前序遍历，递归实现
     public static void preOrder(TreeNode biTree)
     {
@@ -59,7 +57,6 @@ public class BinaryTree {
             preOrder(rightTree);
         }
     }
-
 
     //前序遍历非递归实现
     public static void preOrder2(TreeNode root){
@@ -79,19 +76,19 @@ public class BinaryTree {
     }
 
     //中序遍历，递归实现
-    public static void midOrder(TreeNode biTree) {
+    public static void inOrder(TreeNode biTree) {
 
         if (biTree == null)
             return;
         else {
-            midOrder(biTree.left);
+            inOrder(biTree.left);
             System.out.print(biTree.data + ",");
-            midOrder(biTree.right);
+            inOrder(biTree.right);
         }
     }
 
     //中序遍历，非递归实现
-    public static void midOrder2(TreeNode biTree){
+    public static void inOrder2(TreeNode biTree){
         if(biTree==null) return;
         Stack<TreeNode> s=new Stack<>();
         while (!s.isEmpty()||biTree!=null){

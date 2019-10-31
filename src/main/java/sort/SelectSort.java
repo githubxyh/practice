@@ -6,7 +6,7 @@ package sort;
 public class SelectSort {
 
     public static void main(String[] args) {
-        int arr[] = {1,12,9,66,45,4,23,7,3};
+        int arr[] = {235,12,9,66,45,4,23,7,3};
         select(arr);
         ArrayUtil.listArray(arr);
     }

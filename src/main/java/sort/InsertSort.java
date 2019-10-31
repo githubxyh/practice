@@ -6,7 +6,7 @@ package sort;
 public class InsertSort {
 
     public static void main(String[] args) {
-        int arr[] = {1,12,9,66,45,4,23,7,3};
+        int arr[] = {34,12,9,66,45,4,23,7,3};
         insert(arr);
         ArrayUtil.listArray(arr);
     }

@@ -1,12 +1,12 @@
 package sort;
 
 /**
- * 归并排序
+ * 归并排序：将一个数组，拆分成若干个小数组，排序后再将小数组进行合并。
  */
 public class MergeSort {
     public static void main(String[] args) {
         int arr[] = {9,78,34,45,2,28,45,90,65,28,3};
-        ArrayUtil.listArray(arr);
+        ArrayUtil.listArray( merge(arr,0,arr.length-1));
     }
 
     private static int[] merge(int[] ints,int start,int end){
@@ -31,5 +31,4 @@ public class MergeSort {
         }
         return intsN;
     }
-
 }

@@ -12,24 +12,20 @@ public class SelectSort {
     }
 
     public static void select(int[] arr){
-        int pivot = 0;
-        for(int i=pivot; i < arr.length; i++){
-            int temp = arr[pivot];
-            int index = pivot;
-
-            for(int j=pivot; j < arr.length; j++){
-                if(temp > arr[j]){
-                    temp = arr[j];
-                    index = j;
+        for(int pivot=0; pivot < arr.length-1; pivot++){
+            //基准位置右边最小值索引
+            int minIndex = pivot;
+            for(int j = pivot + 1; j < arr.length; j++){
+                if(arr[minIndex] > arr[j]){
+                    minIndex = j;
                 }
             }
-
-            if(index != pivot){
-                int temp2 = arr[index];
-                arr[index] = arr[pivot];
+            //如果最小值索引不是当前基准位置
+            if(minIndex != pivot){
+                int temp2 = arr[minIndex];
+                arr[minIndex] = arr[pivot];
                 arr[pivot] = temp2;
             }
-            pivot++;
         }
     }
 }

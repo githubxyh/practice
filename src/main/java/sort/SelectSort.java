@@ -19,6 +19,7 @@ public class SelectSort {
 
             for(int j=pivot; j < arr.length; j++){
                 if(temp > arr[j]){
+                    temp = arr[j];
                     index = j;
                 }
             }

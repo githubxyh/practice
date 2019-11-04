@@ -1,4 +1,4 @@
-package sort;
+package interview10_sort;
 
 /**
  * 快速排序：在数组中选取一个基准值（一般选择数组的第一个元素或者最后一个元素），

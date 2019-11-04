@@ -1,4 +1,4 @@
-package sort;
+package interview10_sort;
 
 /**
  * 冒泡排序:每相邻两个元素比较，一遍一遍的比较冒泡，直到冒泡一轮后没有发生元素调换则排序结束。

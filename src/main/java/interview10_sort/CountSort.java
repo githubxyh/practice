@@ -1,4 +1,4 @@
-package sort;
+package interview10_sort;
 
 /**
  * 计数排序：创建一个长度为（最大值-最小值）长度的数组newArr，遍历要排序数组，将每个元素都减去最小值，

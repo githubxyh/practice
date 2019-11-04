@@ -1,4 +1,4 @@
-package sort;
+package interview10_sort;
 
 public class ArrayUtil {
 

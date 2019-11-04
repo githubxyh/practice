@@ -1,4 +1,4 @@
-package sort;
+package interview10_sort;
 
 /**
  * 归并排序：将一个数组，拆分成若干个小数组，排序后再将小数组进行合并。

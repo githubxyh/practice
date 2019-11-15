@@ -5,4 +5,7 @@ package interview11;
  * 要求
  */
 public class BinarySearch {
+    public static void main(String[] args) {
+
+    }
 }
